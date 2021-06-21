@@ -1,0 +1,22 @@
+[package]
+name = "libary"
+version = "0.1.0"
+authors = ["silascool <silascoolidge@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+rand = { version = "0.7.3", features = ["small_rng"] }
+rand_distr = "0.3.0"
+serde = {version = "1.0.117", features = ["derive"] }
+serde_derive = "1.0.117"
+serde_json = "1.0.20"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "time"
+harness = false
